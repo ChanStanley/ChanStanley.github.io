@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background: DarkGray;
 }
 h1{
   font-family: 'Lobster', cursive;
@@ -14,4 +15,8 @@ canvas {
   border-style: solid;
   box-shadow: 5px 5px 20px;
 
+}
+h2{
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
 }
