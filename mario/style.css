@@ -1,7 +1,17 @@
 html, body {
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
 }
 canvas {
   display: block;
+  margin: auto;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 5px 5px 20px;
+
 }
