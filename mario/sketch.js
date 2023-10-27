@@ -159,7 +159,7 @@ function keyReleased(){
 }
 
 function draw(){
-    background('#80a1f2')
+    background('#2f374a')
     scale(rez)
 
     scroll()
