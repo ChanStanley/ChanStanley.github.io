@@ -190,7 +190,7 @@ function checkGameOver(){
     else if (coins == coinCount){
         fill(255, 0, 0)
         textAlign(CENTER)
-        text("You collected all the coins!", width/4 + viewX, height/4 + viewY)
+        text("You collected all the coins! Happy Halloween!", width/4 + viewX, height/4 + viewY)
         text("Click to Restart", width/4 + viewX, height/4 +20 + viewY)
         gameOver = true
     }
