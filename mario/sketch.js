@@ -125,11 +125,11 @@ function init(){
 }
 
 function keyPressed(){
-    if (keyCode == LEFT_ARROW){
+    if (keyCode == LEFT_ARROW or keyCode == 65){
         alien.dx = -WALKING_SPEED
         alien.state = 'walking'
     }
-    else if (keyCode == RIGHT_ARROW){
+    else if (keyCode == RIGHT_ARROW or keyCode == 68){
         alien.dx = WALKING_SPEED
         alien.state = 'walking'
     }
