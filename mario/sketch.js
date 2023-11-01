@@ -144,11 +144,11 @@ function keyPressed(){
 }
 
 function keyReleased(){
-    if (keyCode == LEFT_ARROW) {
+    if (keyCode == LEFT_ARROW || keyCode == 65) {
         alien.dx = 0
         alien.state = 'idle'
     }
-    else if (keyCode == RIGHT_ARROW){
+    else if (keyCode == RIGHT_ARROW || keyCode == 68){
         alien.dx = 0
         alien.state = 'idle'
     }
