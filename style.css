@@ -12,6 +12,10 @@ nav{
 table{
     text-align: center;
 }
+/* There is a specificity conflict here between class and id
+ * We are coloring the text to be blue in the class
+ * The id is coloring the text to be gray, thus a conflict
+ * Since id has the higher specificity, it overrides the class */
 .footerr{
     text-align: end;
     color: blue;
