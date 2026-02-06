@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+.info{
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+table{
+    text-align: center;
+}
+.footerr{
+    text-align: end;
+    color: blue;
+}
+#footerr2{
+    color: gray;
+}
