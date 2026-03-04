@@ -1,23 +1,59 @@
 h1{
     text-align: center;
 }
-#headshot{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5%;
-    height: auto;
-}
 nav{
     text-align: center;
+    background-color: #2196f3;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 1.25rem;
 }
-.info{
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
 }
-table{
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo span{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.logo img{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 1.25rem;
+    gap: 1.25rem; /* grid-gap is apparently obsolete and is now just gap */
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1.25rem;
+    font-size: 1.875rem;
     text-align: center;
+}
+.description{
+    font-size: 1.25rem;
 }
 /* There is a specificity conflict here between class and id
  * We are coloring the text to be blue in the class
