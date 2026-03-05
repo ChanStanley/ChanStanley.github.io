@@ -1,35 +1,41 @@
-h1{
+h1
+{
     text-align: center;
 }
-nav{
+nav
+{
     text-align: center;
     background-color: #2196f3;
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 1.25rem;
 }
-.navbar{
+.navbar
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1.25rem;
 }
-.logo{
+.logo
+{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.logo span{
+.logo span
+{
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
-.logo img{
-    display: flex;
-    justify-content: space-between;
+.logo img
+{
     width: 20%;
 }
-.nav-links{
+.nav-links
+{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: end;
     gap: 1rem;
     margin: 0;
@@ -38,31 +44,64 @@ nav{
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
-.grid-container {
+.grid-container
+{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #2196f3;
     padding: 1.25rem;
     gap: 1.25rem; /* grid-gap is apparently obsolete and is now just gap */
 }
-.grid-item {
+.grid-item
+{
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 1.25rem;
+    max-width: 100%;
+    min-width: 0;
     font-size: 1.875rem;
     text-align: center;
+    overflow-wrap: break-word;
 }
-.description{
+.grid-item img
+{
+    max-width: 100%;
+}
+.description
+{
     font-size: 1.25rem;
 }
 /* There is a specificity conflict here between class and id
  * We are coloring the text to be blue in the class
  * The id is coloring the text to be gray, thus a conflict
  * Since id has the higher specificity, it overrides the class */
-.footerr{
+.footerr
+{
     text-align: end;
     color: blue;
 }
-#footerr2{
+#footerr2
+{
     color: gray;
+}
+@media (max-width: 768px)
+{
+    html
+    {
+        font-size: 1.5rem;
+    }
+    .nav-links
+    {
+        flex-direction: column;
+    }
+    .grid-container
+    {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .grid-item
+    {
+        font-size: 1.25rem;
+        padding: 1rem;
+    }
 }
