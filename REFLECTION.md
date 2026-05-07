@@ -1,3 +1,0 @@
-flex-direction: row and column do different things. If you use row, then your items will display horizontally. If you use column, then it will display vertically.
-
-It is important to use relative units instead of fixed pixels for responsive design because relative units allows for relative scaling. In a responsive design, you do not want something to be fixed to one pixel size, you want to be able to scale accordingly to the user. One example would be if the user was using a mobile device or a desktop. If you use fixed pixels, then you will force that onto the user regardless of what device they are using. If you use relative units, then it will scale to the settings that the device is using; this allows readibility and accessibility
