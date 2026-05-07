@@ -43,7 +43,6 @@ const App = () => {
   const [buy, setBuy] = useState(0)
   const [hold, setHold] = useState(0)
   const [sell, setSell] = useState(0)
-  const [allClicks, setAll] = useState([])
 
   const handleBuyVote = () => {
     setBuy(buy + 1)
