@@ -39,6 +39,26 @@ const Statistics = ({ buy, hold, sell }) => {
   )
 }
 
+const Consensus = ({ buy, hold, sell }) => {
+  let result = ""
+  if (buy > hold && buy > sell) {
+    result = "BUY"
+  }
+  else if (hold > buy && hold > sell) {
+    result = "HOLD"
+  }
+  else if (sell > buy && sell > hold) {
+    result = "SELL"
+  }
+  else {
+    result = "UNCLEAR"
+  }
+
+  return (
+    <div>Analyst consensus is: {result}</div>
+  )
+}
+
 const App = () => {
   const [buy, setBuy] = useState(0)
   const [hold, setHold] = useState(0)
@@ -66,6 +86,12 @@ const App = () => {
       </div>
 
       <Statistics
+        buy = {buy}
+        hold = {hold}
+        sell = {sell}
+      />
+
+      <Consensus
         buy = {buy}
         hold = {hold}
         sell = {sell}
