@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MY APP</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Your Favorite Quotes</h1>
+    <form action="/quotes" method="POST">
+        <input type="text" placeholder="name" name="name" />
+        <input type="text" placeholder="quote" name="quote" />
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Quotes</h2>
+    <ul class="quotes">
+        <% for(var i = 0; i < quotes.length; i++) {%>
+        <li class="quote">
+            <span><%= quotes[i].name %></span>:
+            <span><%= quotes[i].quote %></span>
+        </li>
+        <% } %>
+    </ul>
+    <section>
+        <h2>Update a Quote</h2>
+        <p>Type the name of the person whose quote you want to change, then the new quote:</p>
+        <input type="text" placeholder="Existing Name" id="update-name" />
+        <input type="text" placeholder="New Quote" id="update-quote" />
+        <button id="update-button">Update Quote</button>
+    </section>
+    <div>
+        <h2>Remove a Quote</h2>
+        <p>
+            Delete a quote. Does nothing if requested quote doesn't exist
+        </p>
+        <button id="delete-button">Delete a quote</button>
+    </div>
+    <div id="message"></div>
+    <script src="/main.js"></script>
+  </body>
+</html>
